@@ -9,7 +9,7 @@ def getStockData(symbol):
     print (responseString)
     jsonRes = json.loads(responseString)
     print ("The current price of " + symbol + " is " + jsonRes['Stock Quotes'][0]['2. price'])
-
+    print ("Stock Quotes retrieved successfully!")
 
 
 def main():
